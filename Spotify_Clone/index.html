@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Spotify - Web Player</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="nav">
+            <li><img src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_White.png" width="50px"></li>
+            <li><button><i class="bi bi-house-door" style="color: rgb(204, 204, 204); font-size: 28px;"></i></button></li>
+            <li><div class="searchbar">
+                <div class="s"><i class="bi bi-search" style="color: gray; font-size: 24px;"></i></div>
+                <p>What do you want to play?</p>
+                <hr color="gray">
+                <div class="f"><i class="bi bi-folder"></i></div>
+            </li>
+            <li>
+                <div class="r1">
+                    <p>Premium</p>
+                    <p>Support</p>
+                    <p>Download</p>
+                    <hr color="gray">
+                </div>
+            </li>
+            <li>
+                <div class="r2">
+                    <p><i class="bi bi-download" style="margin: 8px;"></i>Install App</p>
+                    <p>Sign Up</p>
+                    <div class="log"><p><button>Log In</button></p></div> 
+                </div>
+            </li>
+        
+            </div>
+    </nav>
+
+    <!-- Body -->
+<div class="body1">
+    <!-- Slidebar -->
+     <div class="side">
+        <div class="top">
+            <p>Your Library</p>
+            <button><i class="bi bi-plus" style="color: white;"></i></button>
+        </div>
+        <div class="b1">
+            <h2>Create your own playlist</h2>
+            <p>It's easy,we'll help you</p>
+            <button>Create playlist</button>
+        </div>
+        <div class="b2">
+        <h2>Let's find some podcast to follow</h2>
+        <p>we'll keep you updated on new updates</p>
+        <button>Browse podcast</button>
+        </div>
+     </div>
+
+     <!-- Main -->
+      <div class="main">
+        <div class="part1">
+            <p class="p1">Recently Played</p>
+            <div class="sng1">
+                <div class="ss">
+                <img src="img/1.jpg" alt="">
+                 <button class="but" onclick="songon(1,this)"><img class="playbutton" src="play.pause/play-fill.svg" style="margin-left: 7px; margin-top: 5px; width: 38px;" ></button>
+                  <p class="songname">Udaarian</p>
+                  <p class="singer">Deep Ambar</p>
+                </div>
+                <div class="ss">
+                 <img src="img/2.jpg" alt="">
+                <button class="but" onclick="songon(2,this)"><img class="playbutton" src="play.pause/play-fill.svg" style="margin-left: 8px; margin-top: 5px; width:38px;" ></button>
+                 <p class="songname">Tum ho toh</p>
+                 <p class="singer">Vishal Mishra, Hansika Pareek, Raj Shekhar</p>
+                </div>
+                <div class="ss">
+                  <img src="img/3.jpg">
+                  <button class="but" onclick="songon(3,this)"><img class="playbutton" src="play.pause/play-fill.svg" style="margin-left: 8px; margin-top: 5px; width:38px;" ></button>
+                  <p class="songname">Ishqa Ve</p>
+                  <p class="singer">Zeeshan Ali, Sandeep Aulakh, Honey Dhillon</p>
+                </div>
+                <div class="ss">
+                 <img src="img/4.jpg">
+                   <button class="but" onclick="songon(4,this)"><img class="playbutton" src="play.pause/play-fill.svg" style="margin-left: 8px; margin-top: 5px; width:38px;" ></button>
+                  <p class="songname">Bargad</p>
+                  <p class="singer">Arpit Bala</p>
+                </div>
+                <div class="ss">
+                  <img src="img/5.jpg">
+                   <button class="but" onclick="songon(5,this)"><img class="playbutton" src="play.pause/play-fill.svg" style="margin-left: 8px; margin-top: 5px; width:38px;" ></button>
+                  <p class="songname">Ishq de fanniyar </p>
+                  <p class="singer">Jyotica Tangri</p>
+                </div>
+                <div class="ss">
+                  <img src="img/6.jpg">
+                   <button class="but" onclick="songon(6,this)"><img class="playbutton" src="play.pause/play-fill.svg" style="margin-left: 8px; margin-top: 5px; width:38px;" ></button>
+                  <p class="songname">Jab Tak</p>
+                  <p class="singer">Armaan Malik, Amaal Malik</p>
+                </div>
+                <div class="ss">
+                   <img src="img/7.jpg">
+                     <button class="but" onclick="songon(7,this)"><img class="playbutton" src="play.pause/play-fill.svg" style="margin-left: 8px; margin-top: 5px; width:38px;" ></button>
+                    <p class="songname">Andaaz e Karam</p>
+                    <p class="singer">Madhur Sharma</p>
+                </div>
+            </div>
+        </div>
+        <div class="part2">
+            <p class="p1">Recommended for You</p>
+            <div class="sng1">
+                <div class="ss">
+                    <img src="https://c.saavncdn.com/034/Sheesha-Hindi-2024-20240913171750-500x500.jpg" alt="">
+                    <button class="but"> <i class="bi bi-play-fill" style="margin-left: 2px;"></i></button>
+                    <div class="songname">Sheesha</div>
+                    <div class="singer">Mitta Ror</div>
+                </div>
+                <div class="ss">
+                    <img src="https://c.saavncdn.com/598/Saiyaara-Hindi-2025-20250703061754-500x500.jpg" alt="">
+                     <button class="but"> <i class="bi bi-play-fill" style="margin-left: 2px;"></i></button>
+                    <p class="songname">Saiyaara</p>
+                    <p class="singer">Tanishk Bagchi, Faheem Abdullah, Arslan Nizami</p>
+                </div>
+                <div class="ss">
+                    <img src="https://c.saavncdn.com/856/Sitaare-From-Ikkis-Hindi-2025-20251203170135-500x500.jpg" alt="">
+                    <button class="but"> <i class="bi bi-play-fill" style="margin-left: 2px;"></i></button>
+                    <p class="songname">Sitaare</p>
+                    <p class="singer">Amitabh Bhattacharya, Arijit Singh, Sachin-Jigar</p>
+                </div>
+                <div class="ss">
+                    <img src="https://c.saavncdn.com/450/Gehra-Hua-From-Dhurandhar-Hindi-2025-20251205154217-500x500.jpg" alt="">
+                    <button class="but"> <i class="bi bi-play-fill" style="margin-left: 2px;"></i></button>
+                    <div class="songname">Gehra Hua</div>
+                    <div class="singer">Shashwat Sachdev, Arijit Singh, Irshad Kamil, Armaan Khan</div>
+                </div>
+                <div class="ss">
+                    <img src="https://i.scdn.co/image/ab67616d0000b273cdce9a38222807fa703b4396" alt="">
+                    <button class="but"> <i class="bi bi-play-fill" style="margin-left: 2px;"></i></button>
+                    <div class="songname">Bairan</div>
+                    <div class="singer">Banjaare</div>
+                </div>
+                <div class="ss">
+                    <img src="https://c.saavncdn.com/479/Khat-Hindi-2025-20251130113423-500x500.jpg" alt="">
+                     <button class="but"> <i class="bi bi-play-fill" style="margin-left: 2px;"></i></button>
+                    <div class="songname">Khat</div>
+                    <div class="singer">Navjot Ahuja</div>
+                </div>
+                <div class="ss">
+                    <img src="https://c.saavncdn.com/504/Arz-Kiya-Hai-Coke-Studio-Bharat-Hindi-2025-20250818054005-500x500.jpg" alt="">
+                     <button class="but"> <i class="bi bi-play-fill" style="margin-left: 2px;"></i></button>
+                    <div class="songname">Arz Kiya hai</div>
+                    <div class="singer">Anuv Jain</div>
+                </div>
+            </div>
+        </div>
+        <div class="part3">
+            <p class="p1">Popular Songs</p>
+            <div class="sng1">
+                <div class="ss">
+                    <img src="https://c.saavncdn.com/767/Kashish-Hindi-2024-20240610211227-500x500.jpg" alt="">
+                    <button class="but"> <i class="bi bi-play-fill" style="margin-left: 2px;"></i></button>
+                    <div class="songname">Kashish</div>
+                    <div class="singer">Ashish Bhatia, Omkar Singh, Kashish Ratnani</div>
+                </div>
+                <div class="ss">
+                    <img src="https://c.saavncdn.com/121/Paaro-Hindi-2024-20240402130143-500x500.jpg" alt="">
+                    <button class="but"> <i class="bi bi-play-fill" style="margin-left: 2px;"></i></button>
+                    <div class="songname">Paaro</div>
+                    <div class="singer">Aditya Rikhari </div>
+                </div>
+                <div class="ss">
+                    <img src="https://c.saavncdn.com/621/P-POP-CULTURE-Punjabi-2025-20250820043757-500x500.jpg" alt="">
+                    <button class="but"> <i class="bi bi-play-fill" style="margin-left: 2px;"></i></button>
+                    <div class="songname">Boyfriend</div>
+                    <div class="singer">Karan Aujla, IKKY, Ikwinder Sahota, Milan D'Agostini</div>
+                </div>
+                <div class="ss">
+                    <img src="https://c.saavncdn.com/203/Finding-Her-Female-Version-Hindi-2025-20250818133157-500x500.jpg" alt="">
+                     <button class="but"> <i class="bi bi-play-fill" style="margin-left: 2px;"></i></button>
+                    <div class="songname">Finding Her (Female Version)</div>
+                    <div class="singer">Saaheal, Bharath, Tanishka Bahl  </div>
+                </div>
+                <div class="ss">
+                    <img src="https://c.saavncdn.com/140/Sahiba-Hindi-2023-20231213191015-500x500.jpg" alt="">
+                     <button class="but"> <i class="bi bi-play-fill" style="margin-left: 2px;"></i></button>
+                    <div class="songname">Sahiba</div>
+                    <div class="singer">Aditya Rikhari </div>
+                </div>
+                <div class="ss">
+                    <img src="https://c.saavncdn.com/541/High-On-You-Punjabi-2024-20241211183544-500x500.jpg" alt="">
+                     <button class="but"> <i class="bi bi-play-fill" style="margin-left: 2px;"></i></button>
+                    <div class="songname">High On You</div>
+                    <div class="singer">Jind Universe</div>
+                </div>
+                <div class="ss">
+                    <img src="https://c.saavncdn.com/482/Khayaal-Punjabi-2023-20230316171209-500x500.jpg" alt="">
+                    <button class="but"> <i class="bi bi-play-fill" style="margin-left: 2px;"></i></button>
+                    <div class="songname">Khayaal</div>
+                    <div class="singer">Talwiinder</div>
+                </div>
+            </div>
+        </div>
+        <div class="part4">
+            <br>
+            <br>
+        </div>
+      </div>
+</div>
+
+    <!-- footer Playbox -->
+     <div class="footer">
+        <div class="sg">
+            <div class="b"><img src="img/0.jpg" alt=""></div>
+            <div class="con">
+                <p class="con1">Music is stopped.</p>
+                <p class="con2">Please play music on Spotify</p>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="control">
+                <div id="shuffle"><i class="bi bi-shuffle"></i></div>
+                <div id="backward"><i class="bi bi-skip-backward-fill"></i></div>
+                <div class="play" ><button> <img id="play" src="play.pause/play-fill.svg" style="margin-left: 2.5px; margin-top: 2px; width: 38px;" ></button></div>
+                <div id="forward"><i class="bi bi-skip-forward-fill"></i></div>
+                <div id="repeat"><i class="bi bi-repeat"></i></div>
+            </div>
+            <div class="range">
+                <input type="range" id="progressBar" value="0">
+            </div>
+        </div>
+     </div>
+<script src="script.js"></script>
+</body>
+</html>

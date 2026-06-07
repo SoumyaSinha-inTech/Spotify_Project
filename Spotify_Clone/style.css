@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: Poppins;
+    overflow-x: hidden;
+}
+.nav li img{
+    padding: 10px;
+}
+.nav li button{
+    width: 50px;
+    height: 50px;
+    margin: 10px 20px;
+    background-color: rgb(33, 33, 33);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.nav li button img{
+    width: 55px;
+    height: 55px;
+    
+}
+.nav{
+    list-style: none;
+    display: flex;
+}
+.searchbar{
+    display: flex;
+    width: 450px;
+    height: 45px;
+    background-color: rgba(39, 39, 39, 0.872);
+    border-radius: 100px;
+    margin: 12px -10px;
+}
+.s{
+    margin: 5px 20px;
+}
+.searchbar p{
+    margin: 12px -2px;
+    font-size: 14px;
+    color: gray;
+}
+.searchbar:hover{
+    background-color: rgb(22, 22, 22);
+    cursor:text;
+}
+.searchbar hr{
+    height: 25px;
+    margin: 10px;
+    margin-left: 140px;
+    
+}
+.f{
+    font-size: 24px;
+    margin: 5px;
+}
+.r1{
+    display: flex;
+    gap: 20px;
+    color: gray;
+    font-size: 15px;
+    margin: 25px 200px;
+}
+.r2{
+    display: flex;
+    gap: 20px;
+    color: gray;
+    font-size: 15px;
+    margin: 25px -220px;
+}
+.log p button{
+    background-color: white;
+    width: 110px;
+    font-size: 15px;
+    font-weight: 700;
+    height: 45px;
+    margin: -12px 30px;
+    transition: 2ms;
+}
+.log p button:hover{
+    transform: scale(1.05);
+}
+.r1 hr{
+    margin: 0px 40px;
+}
+.body1{
+    display: flex;
+}
+.side{
+    width: 25.5vw;
+    background-color: rgb(17, 17, 17);
+    height: 80vh;
+    border-radius: 10px;
+}
+.top{
+    display: flex;
+    width: 25vw;
+}
+.top p{
+    margin: 25px 25px;
+    font-weight: 500;
+}
+.top button{
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+    margin-left: 160px;
+    background-color: rgb(53, 53, 53);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 26px;
+}
+.top button:hover{
+    background-color: rgb(70, 70, 70);
+}
+.b1{
+    width: 24vw;
+    height: 130px;
+    background-color:  rgb(32, 32, 32);
+    border-radius: 8px;
+    margin:15px 10px;
+}
+.b2{
+    width: 24vw;
+    height: 130px;
+    background-color:  rgb(32, 32, 32);
+    border-radius: 8px;
+    margin:30px 10px;
+}
+.side h2{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px;
+}
+.b1 p{
+font-weight: 200;
+    font-size: 12px;
+    padding-left:  15px;
+    margin-top: -10px;
+}
+.b2 p{
+    font-weight: 200;
+    font-size: 12px;
+     padding-left:  15px;
+    margin-top: -10px;
+}
+.b1 button{
+    background-color: white;
+    width: 130px;
+    font-size: 12px;
+    font-weight: 700;
+    height: 40px;
+    margin: -12px 30px;
+    transition: 2ms;
+    border: none;
+    border-radius: 50px;
+    margin: 10px;
+}
+.b2 button{
+    background-color: white;
+    width: 130px;
+    font-size: 12px;
+    font-weight: 700;
+    height: 40px;
+    margin: -12px 30px;
+    transition: 2ms;
+    border: none;
+    border-radius: 50px;
+    margin: 10px;
+}
+.b1 button:hover{
+ transform: scale(1.05);
+}
+.b2 button:hover{
+     transform: scale(1.05);
+}
+.main{
+    width: 73.5vw;
+    background-color: rgb(17, 17, 17);
+    height: 80vh;
+    border-radius: 10px;
+    margin-left: 10px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+.p1{
+    font-weight: 600;
+    font-size: 25px;
+     margin: 30px;
+}
+.sng1{
+    margin: 0px 10px;
+    width: 100%;
+    display: flex;
+    height: 280px;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+.ss{
+    position: relative;
+    width: 14vw;
+    margin: 0px 10px;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+.ss:hover{
+    background-color: rgb(29, 29, 29);
+}
+.ss img{
+    width: 90%;
+    margin: 9.5px;
+}
+.songname{
+    font-weight: 500;
+    font-size: 18px;
+     margin: 0px 9px;
+}
+.singer{
+    color: rgba(141, 141, 141, 0.896);
+    font-size: 12px;
+    margin: 0px 9px;
+    text-align: left;
+}
+.but{
+    font-size: 35px;
+    background-color: rgb(30, 215, 96);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 90px;
+    position: absolute;
+    margin: 130px -70px;
+    opacity: 0;
+    transition: 0.2s;
+}
+.ss:hover .but{
+    opacity: 1;
+    transform: scale(1.05px);
+    cursor: pointer;
+}
+.footer{
+    width: 100%;
+    height: 25vh;
+    display: flex;
+}
+.sg{
+    display: flex;
+}
+.b img{
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    border-radius: 4px;
+}
+.con2{
+   color: rgba(141, 141, 141, 0.896);
+    font-size: 12px;
+}
+.con{
+    margin: 20px 15px;
+}
+.panel{
+    margin-top: -10px;
+    margin-left: 400px;
+    width: 840px;
+    position: fixed;
+}
+.control{
+    display: flex;
+    justify-content: center;
+    margin: 0px 12vw;
+    height: 60px;
+}
+.play button{
+    font-size: 35px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 90px;
+    margin-top: 20px;
+}
+#forward{
+    font-size: 25px;
+    margin: 22px 30px;
+}
+#backward{
+    font-size: 25px;
+    margin: 22px 30px ;
+}
+#shuffle{
+    font-size: 22px;
+    margin: 24px 50px;
+}
+#repeat{
+    font-size: 22px;
+    margin: 24px 50px;
+}
+#progressBar{
+    margin: -200px 120px;
+    width: 600px;
+    height: 3px;
+    background-color: gray;
+    border-radius: 5px;
+    cursor: pointer;
+    accent-color: rgb(30, 215, 96);
+}
